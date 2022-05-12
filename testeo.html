@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Criptografador</title>
+        <meta charset="UTF-8">
+        <meta name = "author" content=" Vanderley Espirandelli">
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel = "stylesheet" href ="css/stylech.css">         
+    </head>
+    <body>
+        <header id="cabecalho">
+            <img class="img-Vector "src="imagens/Vector.png">
+        </header>
+        <h1 id="titulo">Criptografar Mensagens</h1>
+        
+        <div class="area-principal">
+                <div class="area-texto" >
+                    <textarea id="textArea" placeholder="Digite aqui sua mensagem"  type="text" ></textarea>
+                </div> 
+                <div id="bloco-mensagem"> 
+                    <div class="mostra-mensagem" id="mostra-mensagem">Nenhuma mensagem encontrada</div>
+                </div>  
+        </div>         
+        
+        <div id="botoes">
+            <button class= 'botao' id="encrypt">Criptografar</button>
+            <button class= 'botao' id="decrypt">Descriptografar</button>
+        </div>
+        <div id="botao-copy">
+            <button class= 'botao' id="copy" onclick="copyToClickBoard">Copiar</button> 
+            
+        </div>
+        <h2 id="linha">
+            <img class="img-linha" src="imagens/bi_exclamation-circle-fill.png">
+            Digite apenas letras minúsculas e sem acentuação.
+        </h2>
+
+        <div id="rodape">
+            <footer>
+                <p id="info"> 
+                    
+                    <script> 
+                        var timepr = new Date();
+                        document.getElementById('info').innerHTML = timepr.getFullYear();
+                    </script>
+
+                    &copy Vanderley Espirandelli
+                    <a href="https://www.linkedin.com/in/vanderley-espirandelli-392a6028/" target="_blank" ><img class="img-footer" src="./imagens/linkedin.png"></a>
+                    <a href="https://github.com/Vandspi" target="_blank" ><img class="img-footer" src="./imagens/git.png"></a>
+                </p>    
+            </footer>
+        </div>
+
+            <script src="js/cript.js"></script>
+    </body>
+</html>
